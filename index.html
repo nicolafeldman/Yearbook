@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        .container {
+        	width: 900px;
+        	margin: 0 auto;
+        	/*border: 1px solid black;*/
+        	text-align: center;
+        }
+        .pic {
+        	display: inline-flex;
+        	/*flex-direction: row;
+        	flex-wrap: wrap;*/
+        	flex-flow: row wrap;
+
+        	width: 295px;
+        	height: 300px;
+        	/*border: 1px solid red;*/
+        	position: relative;
+        }
+
+        .description{
+        	position: absolute;
+        	padding-bottom: 50px;
+        	padding-left: 10px;
+        	padding-right: 10px;
+        	border-radius: 20%;
+        }
+
+        .picture{
+        	position: absolute;
+        	background-size: cover;
+        	background-position: center;
+        	background-repeat: no-repeat;
+        	width: 100%;
+        	height: 100%;
+        	transition: all 250ms ease-out 0ms;
+        }
+
+        .pic:hover > .picture{
+        	/*opacity: 0;
+        	transition-duration: 1s;*/
+        	-webkit-transform:rotate(-15deg) scale(1.5,1.5) translateX(-85%) translateY(10%);
+        	/*z-index: 1;*/
+        	box-shadow: 5px 5px 5px #888888;
+        }
+
+        .pic:hover {
+        	z-index: 1;
+        }
+
+/*        .pic:hover ~ .pic {
+        	z-index: -1;
+        }*/
+
+        .pic:hover > .description {
+        	-webkit-transform:rotate(5deg) scale(1.1,1.1) translateX(20%) translateY(10%);
+        	background-color: #D8D8E6;
+        }
+
+    </style>
+</head>
+
+<body>
+	<div class='container'>
+		<div class='pic'>
+			<div class='description'>
+				<h1>July</h1>
+				This picture is actually from June 2013 and was taken at Lake Champlain in Burlington, VT.
+			</div>
+			<div class='picture' style="background-image: url('images/july.jpg')"></div>
+		</div>
+		<div class='pic'>
+			<div class='description'>
+				<h1>August</h1>
+				The SCHOLAR RAs try to look fierce even though I was the only one who could actually enforce rules.
+			</div>
+			<div class='picture' style="background-image: url('images/aug.jpg')"></div>
+		</div>
+		<div class='pic'>
+			<div class='description'>
+				<h1>September</h1>
+				Perfectly in sync at the SO Parents' Weekend show.
+			</div>
+			<div class='picture' style="background-image: url('images/sept.jpg')"></div>
+		</div>
+		<div class='pic'>
+			<div class='description'>
+				<h1>October</h1>
+				Drunk fancy dinner on Salovey's inauguration day!
+			</div>
+			<div class='picture' style="background-image: url('images/oct.jpg')"></div>
+		</div>
+		<div class='pic'>
+			<div class='description'>
+				<h1>November</h1>
+				I look awkward as a few members of SO finish practicing in Beinecke Plaza because we had no practice space.
+			</div>
+			<div class='picture' style="background-image: url('images/nov.jpg')"></div>
+		</div>
+		<div class='pic'>
+			<div class='description'>
+				<h1>December</h1>
+				Happy Holidays!
+			</div>
+			<div class='picture' style="background-image: url('images/dec.jpg')"></div>
+		</div>
+		<div class='pic'>
+			<div class='description'>
+				<h1>January</h1>
+				After the annual UWISAY conference.
+			</div>
+			<div class='picture' style="background-image: url('images/jan.jpg')"></div>
+		</div>
+		<div class='pic'>
+			<div class='description'>
+				<h1>February</h1>
+				Dis is cute...me with my suitemates, except the Asian one.
+			</div>
+			<div class='picture'style="background-image: url('images/feb.jpg')"></div>
+		</div>
+		<div class='pic'>
+			<div class='description'>
+				<h1>March</h1>
+				Matt and I made hot dogs and mac 'n cheese one day during spring break and it was DELICIOUS.
+			</div>
+			<div class='picture' style="background-image: url('images/mar.jpg')"></div>
+		</div>
+		<div class='pic'>
+			<div class='description'>
+				<h1>April</h1>
+				At Cask Republic with Matt's mom and her friend who only eats plain chicken.
+			</div>
+			<div class='picture' style="background-image: url('images/april.jpg')"></div>
+		</div>
+		<div class='pic'>
+			<div class='description'>
+				<h1>May</h1>
+				SO being funny at the Bulldog Days extracurricular bazaar.
+			</div>
+			<div class='picture' style="background-image: url('images/may.jpg')"></div>
+		</div>
+		<div class='pic'>
+			<div class='description'>
+				<h1>June</h1>
+				Obviously I'm not in this picture, but my friend Asa is second from the right, holding his bass. He's at a music festival in Sarasota right now and is going to be famous pretty soon.
+			</div>
+			<div class='picture' style="background-image: url('images/june.jpg')"></div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
